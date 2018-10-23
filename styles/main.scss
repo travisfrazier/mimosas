@@ -2,6 +2,10 @@
  * index.scss
  * - Add any styles you want here!
  */
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700');
+
 *,
 html {
   box-sizing: border-box;
@@ -10,6 +14,13 @@ html {
 body {
   background: #ffffff;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+// Main styles
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
 // Wrapper class
@@ -87,22 +98,64 @@ ul {
 .service {
   border-bottom: 1px solid #e5e2e2;
 }
+
+.service--last {
+  border-bottom: none;
+}
+
 .service__info {
   margin-bottom: 0rem;
   margin-top: 0rem;
 }
 
+.services__image {
+  background-image: url('../images/salon-two.jpg');
+  background-position: center;
+  height: 350px;
+}
+
+// Membership styles
+.membership__title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.membership__subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.membership__offers {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  p {
+    padding: 0.25rem;
+  }
+}
+
+.membership__offers--last {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+
+.membership__image {
+  background-image: url('../images/salon-seven.jpg');
+  background-position: center;
+  height: 350px;
+}
+
 // Footer styles
 footer {
-  //dislay: flex;
-  justify-content: center;
-  margin: auto;
   background-color: #e5e2e2;
   width: 100%;
+  margin-top: 1rem;
   .footer__content {
     display: flex;
-    justify-content: space-around;
-    padding: 0rem 2rem;
+    justify-content: space-between;
+    margin: auto;
     .footer__hours {
       text-align: center;
     }
