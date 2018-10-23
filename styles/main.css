@@ -1,0 +1,155 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+*,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
+
+.wrapper-two {
+  max-width: 960px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0 1.25rem;
+}
+
+.header__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.header__image img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40%;
+  margin-top: -7em;
+}
+
+.home__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin: -2rem auto 0rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home__main .home__buttons {
+  background-color: #e5e2e2a6;
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home__main span {
+  font-size: 2.15rem;
+}
+
+.home__main .home__image {
+  background-image: url("../images/salon-three.jpg");
+  background-position: center;
+  height: 350px;
+}
+
+.home__main .home__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.home__main .home__images figure {
+  margin: 0;
+}
+
+.home__main .home__images figure img {
+  width: 100%;
+  padding: none;
+  opacity: 0.5;
+}
+
+.service {
+  border-bottom: 1px solid #e5e2e2;
+}
+
+.service__info {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  background-color: #e5e2e2;
+  width: 100%;
+}
+
+footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0rem 2rem;
+}
+
+footer .footer__content .footer__hours {
+  text-align: center;
+}
+
+footer .footer__content .footer__social {
+  text-align: right;
+}
+
+footer .footer__content .footer__social i {
+  font-size: 1.5rem;
+  padding-left: 0.75rem;
+}
+/*# sourceMappingURL=main.css.map */
