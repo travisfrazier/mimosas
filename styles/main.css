@@ -3,10 +3,16 @@
  * - Add any styles you want here!
  */
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700");
-*,
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -181,12 +187,10 @@ footer {
 }
 
 footer .footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
 }
 
