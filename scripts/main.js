@@ -5,18 +5,24 @@ const mobileNav = document.querySelector('.mobile__nav');
 
 //listen here
 document
-  .querySelector('.home__images')
-  .addEventListener('click', function(event) {
-    event.preventDefault();
+	.querySelector('.home__images')
+	.addEventListener('click', function(event) {
+		event.preventDefault();
 
-    imageShow.style.backgroundImage = `url(${event.target.src}`;
-    console.log(event.target);
-  });
+		imageShow.style.backgroundImage = `url(${event.target.src}`;
+		console.log(event.target);
+	});
 
 // Mobile Menu Animation Function
 
-mobileMenu.addEventListener('click', () => {
-  mobileNav.classList.toggle('show');
-  mobileNav.classList.toggle('change');
-  console.log('hey');
-});
+// mobileMenu.addEventListener('click', () => {
+// 	mobileNav.classList.toggle('show');
+// });
+
+function openNav() {
+	mobileNav.classList.toggle('show');
+}
+
+function toggleClose(x) {
+	x.classList.toggle('change');
+}

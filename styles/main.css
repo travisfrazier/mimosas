@@ -62,43 +62,6 @@ nav {
   }
 }
 
-nav .mobile__menu {
-  display: inline-block;
-  position: absolute;
-  top: 0.5rem;
-  right: 1rem;
-  z-index: 1000;
-  cursor: pointer;
-  /* Rotate first bar */
-  /* Fade out the second bar */
-  /* Rotate last bar */
-}
-
-nav .mobile__menu .bar1,
-nav .mobile__menu .bar2,
-nav .mobile__menu .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-nav .mobile__menu .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-nav .mobile__menu .change .bar2 {
-  opacity: 0;
-}
-
-nav .mobile__menu .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
 .show {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +75,7 @@ ul {
   z-index: 999;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   ul {
     display: none;
     -webkit-box-orient: vertical;
@@ -135,10 +98,60 @@ ul li {
   padding: 0 1.25rem;
 }
 
+@media only screen and (max-width: 800px) {
+  ul li {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   ul li {
     padding: 0.25rem 1.25rem;
   }
+}
+
+.mobile__menu {
+  z-index: 1000;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .mobile__menu {
+    display: inline-block;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .header__image {
@@ -263,7 +276,14 @@ ul li {
 .services__image {
   background-image: url("../images/salon-two.jpg");
   background-position: center;
+  background-size: cover;
   height: 350px;
+}
+
+@media only screen and (max-width: 575px) {
+  .services__image {
+    height: 200px;
+  }
 }
 
 .membership__title {

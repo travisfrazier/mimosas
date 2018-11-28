@@ -17,7 +17,12 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <div class="mobile__menu" onclick="openNav(), toggleClose(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> 
+      <ul class="mobile__nav">
         <a href="index.html">
           <li>HOME</li>
         </a>
@@ -28,7 +33,7 @@
         <li>GIFT CARD</li>
         <li>ABOUT US</li>
         <li>CONTACT US</li>
-        <ul>
+      </ul>
     </nav>
     <div class="header__image">
       <img src="./images/Logo1.jpg">
