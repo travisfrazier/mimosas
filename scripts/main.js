@@ -1,5 +1,7 @@
 //image to show
 const imageShow = document.querySelector('.home__image');
+const mobileMenu = document.querySelector('.mobile__menu');
+const mobileNav = document.querySelector('.mobile__nav');
 
 //listen here
 document
@@ -10,3 +12,11 @@ document
     imageShow.style.backgroundImage = `url(${event.target.src}`;
     console.log(event.target);
   });
+
+// Mobile Menu Animation Function
+
+mobileMenu.addEventListener('click', () => {
+  mobileNav.classList.toggle('show');
+  mobileNav.classList.toggle('change');
+  console.log('hey');
+});
