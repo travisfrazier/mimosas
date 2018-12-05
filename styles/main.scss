@@ -6,6 +6,9 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700');
 
+//Variables
+$main-color: #48ddd8;
+
 html {
 	box-sizing: border-box;
 }
@@ -26,6 +29,20 @@ body {
 a {
 	color: inherit; /* blue colors for links too */
 	text-decoration: inherit; /* no underline */
+	:hover {
+		color: $main-color;
+		cursor: pointer;
+	}
+}
+
+//Top page images
+@mixin pageImage {
+	background-position: center;
+	background-size: cover;
+	height: 350px;
+	@media only screen and (max-width: 575px) {
+		height: 200px;
+	}
 }
 
 // Wrapper class
@@ -205,12 +222,7 @@ ul {
 
 .services__image {
 	background-image: url('../images/salon-two.jpg');
-	background-position: center;
-	background-size: cover;
-	height: 350px;
-	@media only screen and (max-width: 575px) {
-		height: 200px;
-	}
+	@include pageImage();
 }
 
 // Membership styles
@@ -218,12 +230,18 @@ ul {
 	text-align: center;
 	font-size: 3.5rem;
 	margin-bottom: 1rem;
+	@media only screen and (max-width: 600px) {
+		font-size: 2.75rem;
+	}
 }
 
 .membership__subtitle {
 	text-align: center;
 	font-size: 2rem;
 	margin-top: 0;
+	@media only screen and (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 }
 
 .membership__offers {
@@ -242,8 +260,27 @@ ul {
 
 .membership__image {
 	background-image: url('../images/salon-seven.jpg');
-	background-position: center;
-	height: 350px;
+	@include pageImage();
+}
+
+//About Us Section
+.about__title {
+	font-size: 4rem;
+	margin: 1rem 0;
+	text-align: center;
+	@media only screen and (max-width: 800px) {
+		font-size: 3rem;
+	}
+}
+.about__image {
+	background-image: url('../images/about.jpg');
+	@include pageImage();
+}
+.about__container {
+	p {
+		margin-bottom: 1.5rem;
+		margin-top: 0;
+	}
 }
 
 // Footer styles

@@ -28,6 +28,11 @@ a {
   /* no underline */
 }
 
+a :hover {
+  color: #48ddd8;
+  cursor: pointer;
+}
+
 .wrapper {
   max-width: 1200px;
   padding-left: 10px;
@@ -292,10 +297,22 @@ ul li {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .membership__title {
+    font-size: 2.75rem;
+  }
+}
+
 .membership__subtitle {
   text-align: center;
   font-size: 2rem;
   margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .membership__subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .membership__offers {
@@ -316,7 +333,44 @@ ul li {
 .membership__image {
   background-image: url("../images/salon-seven.jpg");
   background-position: center;
+  background-size: cover;
   height: 350px;
+}
+
+@media only screen and (max-width: 575px) {
+  .membership__image {
+    height: 200px;
+  }
+}
+
+.about__title {
+  font-size: 4rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .about__title {
+    font-size: 3rem;
+  }
+}
+
+.about__image {
+  background-image: url("../images/about.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+@media only screen and (max-width: 575px) {
+  .about__image {
+    height: 200px;
+  }
+}
+
+.about__container p {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
 footer {
