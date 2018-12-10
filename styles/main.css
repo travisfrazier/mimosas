@@ -19,6 +19,7 @@ body {
   background: #ffffff;
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  padding-top: 62px;
 }
 
 a {
@@ -44,6 +45,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -101,6 +105,7 @@ ul {
             justify-content: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 0;
   }
 }
 
