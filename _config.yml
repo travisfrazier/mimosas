@@ -1,1 +1,5 @@
 name: Mimosas and Nails
+
+_editable_regions:
+  image:
+    url_src: true
