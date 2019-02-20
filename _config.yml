@@ -3,3 +3,7 @@ name: Mimosas and Nails
 _editable_regions:
   image:
     url_src: true
+    
+_options:
+  image: # Front matter field
+    uploads_dir: "images/:title"
