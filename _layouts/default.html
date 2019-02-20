@@ -6,7 +6,7 @@
 		<title>Mimosas Nails</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- Styles -->
-		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="{{ 'styles/main.css' | relative_url }}" />
 		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
@@ -33,16 +33,22 @@
 					<a class="appointment editable"><li>APPOINTMENT</li></a>
 				</ul>
 			</nav>
-			<div class="header__image"><img class="editable" src="./images/Logo1.jpg" /></div>
+			<div class="header__image">
+				<img class="editable" src="./images/Logo1.jpg" />
+			</div>
 		</header>
 		{{ content }}
 		<footer>
 			<div class="wrapper-two footer__content">
 				<div>
 					<p class="footer__title editable">LOCATION & CONTACT</p>
-					<p class="editable"><i class="fas fa-map-pin"></i> 9876 S. Bvd. Charlotte, NC 28202</p>
+					<p class="editable">
+						<i class="fas fa-map-pin"></i> 9876 S. Bvd. Charlotte, NC 28202
+					</p>
 					<p class="editable"><i class="fas fa-phone"></i> 123.456.7890</p>
-					<p class="editable"><i class="fas fa-envelope"></i> mimosasandnails@gmail.com</p>
+					<p class="editable">
+						<i class="fas fa-envelope"></i> mimosasandnails@gmail.com
+					</p>
 				</div>
 				<div class="footer__hours">
 					<p class="footer__title editable">HOURS</p>
