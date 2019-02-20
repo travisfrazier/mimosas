@@ -33,13 +33,26 @@ a {
   border: white solid 1px;
   padding: 0.25rem;
   color: #ffffff;
-  display: none;
   margin-left: 0.5rem;
 }
 
 .appointment:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media only screen and (max-width: 650px) {
+  .appointment {
+    margin-left: 1rem;
+    padding: 0rem;
+    margin-top: 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .appointment li {
+    padding: 0.1rem 0.25rem;
+  }
 }
 
 .wrapper {
@@ -72,7 +85,7 @@ nav {
   z-index: 998;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   nav {
     height: auto;
     background-color: #48ddd8;
@@ -115,9 +128,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -129,6 +142,12 @@ ul {
 
 ul a {
   margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  ul a {
+    margin: 0;
+  }
 }
 
 ul li {
@@ -143,7 +162,7 @@ ul li {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   ul li {
     padding: 0.25rem 1.25rem;
   }
