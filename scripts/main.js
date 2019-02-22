@@ -19,17 +19,17 @@ document
 		imageShow.style.backgroundImage = `url(${event.target.src}`;
 		console.log(event.target);
 	});
-
-// Mobile Menu Animation Function
-
-// mobileMenu.addEventListener('click', () => {
-// 	mobileNav.classList.toggle('show');
-// });
-
-function openNav() {
-	mobileNav.classList.toggle('show');
-}
-
-function toggleClose(x) {
-	x.classList.toggle('change');
-}
+//Vue JS Code
+const nav = new Vue({
+	el: '#nav',
+	data: {
+		showNav: false,
+		isChanged: false
+	},
+	methods: {
+		openNav: function() {
+			this.showNav = !this.showNav;
+			this.isChanged = !this.isChanged;
+		}
+	}
+});

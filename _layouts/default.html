@@ -17,13 +17,17 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="mobile__menu" onclick="openNav(), toggleClose(this)">
+			<nav id="nav">
+				<div
+					class="mobile__menu"
+					v-on:click="openNav"
+					v-bind:class="{ change: isChanged }"
+				>
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
 				</div>
-				<ul class="mobile__nav">
+				<ul v-show="showNav" class="mobile__nav">
 					<a href="index.html"><li class="editable">HOME</li></a>
 					<a href="services-one.html"> <li class="editable">SERVICES</li> </a>
 					<a href="membership.html"> <li class="editable">MEMBERSHIP</li> </a>
@@ -66,6 +70,7 @@
 			</div>
 		</footer>
 		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 		<script src="./scripts/main.js"></script>
 	</body>
 </html>
