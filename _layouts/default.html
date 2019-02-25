@@ -8,21 +8,12 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="{{ 'styles/main.css' | relative_url }}" />
 		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-			crossorigin="anonymous"
-		/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
 	</head>
 	<body>
 		<header>
 			<nav id="nav">
-				<div
-					class="mobile__menu"
-					v-on:click="openNav"
-					v-bind:class="{ change: isChanged }"
-				>
+				<div class="mobile__menu" v-on:click="openNav" v-bind:class="{ change: isChanged }">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
@@ -47,18 +38,26 @@
 				<div>
 					<p class="footer__title editable">LOCATION & CONTACT</p>
 					<p class="editable">
-						<i class="fas fa-map-pin"></i> 9876 S. Bvd. Charlotte, NC 28202
+						<i class="fas fa-map-pin"></i>&nbsp;2320 North Davidson Street Suite 2<br />&nbsp; &nbsp;Charlotte, NC 28205
 					</p>
-					<p class="editable"><i class="fas fa-phone"></i> 123.456.7890</p>
 					<p class="editable">
-						<i class="fas fa-envelope"></i> mimosasandnails@gmail.com
+						<i class="fas fa-phone"></i> 704.750.9668
+					</p>
+					<p class="editable">
+						<i class="fas fa-envelope"></i> <a target="_blank" href="mailto:mimosasnailbar@gmail.com">mimosasnailbar@gmail.com</a>
 					</p>
 				</div>
 				<div class="footer__hours">
 					<p class="footer__title editable">HOURS</p>
-					<p class="editable">Mon - Fri 9:30am - 7:30pm</p>
-					<p class="editable">Sat 9am - 7pm</p>
-					<p class="editable">Sun 1pm - 5pm</p>
+					<p class="editable">
+						Mon - Fri 10:00am - 7:30pm
+					</p>
+					<p class="editable">
+						Sat 9:30am - 7:00pm
+					</p>
+					<p class="editable">
+						Sun 1:00pm - 5:00pm
+					</p>
 				</div>
 				<div class="footer__social">
 					<p>
