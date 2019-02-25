@@ -27,7 +27,7 @@
 					<div class="bar2"></div>
 					<div class="bar3"></div>
 				</div>
-				<ul v-show="showNav" class="mobile__nav">
+				<ul class="mobile__nav" v-bind:class="[showNav ? 'show' : '']">
 					<a href="index.html"><li class="editable">HOME</li></a>
 					<a href="services-one.html"> <li class="editable">SERVICES</li> </a>
 					<a href="membership.html"> <li class="editable">MEMBERSHIP</li> </a>

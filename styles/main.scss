@@ -117,7 +117,7 @@ ul {
 	//padding-bottom: 1.25rem;
 	@media only screen and (max-width: 650px) {
 		width: 100%;
-		//display: none;
+		display: none;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
@@ -142,6 +142,10 @@ ul {
 			padding: 0.25rem 1.25rem;
 		}
 	}
+}
+
+.show {
+	display: flex !important;
 }
 
 // Mobile Menu Icon
@@ -235,7 +239,6 @@ ul {
 		}
 	}
 	.home__image {
-		background-image: url('../images/salon-three.png');
 		background-position: center;
 		background-size: cover;
 		height: 375px;
