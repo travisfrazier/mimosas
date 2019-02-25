@@ -8,12 +8,21 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="{{ 'styles/main.css' | relative_url }}" />
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+			integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
 		<header>
 			<nav id="nav">
-				<div class="mobile__menu" v-on:click="openNav" v-bind:class="{ change: isChanged }">
+				<div
+					class="mobile__menu"
+					v-on:click="openNav"
+					v-bind:class="{ change: isChanged }"
+				>
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
@@ -24,7 +33,7 @@
 					<a href="membership.html"> <li class="editable">MEMBERSHIP</li> </a>
 					<a><li class="editable">GIFT CARD</li></a>
 					<a href="about.html"><li class="editable">ABOUT US</li></a>
-					<a><li class="editable">CONTACT US</li></a>
+					<a href="contact.html"><li class="editable">CONTACT US</li></a>
 					<a class="appointment editable"><li>APPOINTMENT</li></a>
 				</ul>
 			</nav>
@@ -38,13 +47,15 @@
 				<div>
 					<p class="footer__title editable">LOCATION & CONTACT</p>
 					<p class="editable">
-						<i class="fas fa-map-pin"></i>&nbsp;2320 North Davidson Street Suite 2<br />&nbsp; &nbsp;Charlotte, NC 28205
+						<i class="fas fa-map-pin"></i>&nbsp;2320 North Davidson Street Suite
+						2<br />&nbsp; &nbsp;Charlotte, NC 28205
 					</p>
+					<p class="editable"><i class="fas fa-phone"></i> 704.750.9668</p>
 					<p class="editable">
-						<i class="fas fa-phone"></i> 704.750.9668
-					</p>
-					<p class="editable">
-						<i class="fas fa-envelope"></i> <a target="_blank" href="mailto:mimosasnailbar@gmail.com">mimosasnailbar@gmail.com</a>
+						<i class="fas fa-envelope"></i>
+						<a target="_blank" href="mailto:mimosasnailbar@gmail.com"
+							>mimosasnailbar@gmail.com</a
+						>
 					</p>
 				</div>
 				<div class="footer__hours">
@@ -71,5 +82,11 @@
 		<!-- Scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 		<script src="./scripts/main.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC86r6Wc5kAeuvTYYQMxiH4nNCNzt2Fs70&callback=initMap"
+			type="text/javascript"
+		></script>
 	</body>
 </html>

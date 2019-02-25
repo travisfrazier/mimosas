@@ -414,3 +414,18 @@ footer {
 		}
 	}
 }
+
+//Contact Page Styles
+.contact {
+	margin-bottom: 3rem;
+}
+
+//Map styles
+#map {
+	height: 450px;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+	@media only screen and (max-width: 600px) {
+		height: 375px;
+	}
+}
