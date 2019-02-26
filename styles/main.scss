@@ -250,12 +250,18 @@ ul {
 	.home__images {
 		display: flex;
 		margin-bottom: 1rem;
+		overflow-y: scroll;
 		figure {
 			margin: 0;
 			img {
 				width: 100%;
 				padding: none;
 				opacity: 0.5;
+				@media only screen and (max-width: 650px) {
+					font-size: 0.8rem;
+					height: 4rem;
+					width: auto;
+				}
 			}
 		}
 	}
