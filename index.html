@@ -1,27 +1,26 @@
 ---
 layout: default
-permalink: /home/
 ---
 
 <section class="wrapper home__main">
-	<div class="home__buttons">
-		<a><span class="editable">REQUEST APPOINTMENT</span></a>
-		<a href="membership.html"
-			><span class="editable">MIMOSAS MEMBERSHIP</span></a
-		>
-	</div>
-	<div id="imageToggle">
-		<div
-			class="home__image"
-			v-bind:style="{ backgroundImage: `url('${src}')` }"
-		></div>
-		<div class="home__images" v-on:click="toggle">
-			<figure><img class="editable" src="./images/salon-three.png" /></figure>
-			<figure><img class="editable" src="/images/salon-two.png" /></figure>
-			<figure><img class="editable" src="./images/salon-four.png" /></figure>
-			<figure><img class="editable" src="./images/salon-seven.png" /></figure>
-			<figure><img class="editable" src="./images/salon-five.png" /></figure>
-			<figure><img class="editable" src="./images/nails.png" /></figure>
-		</div>
-	</div>
+  <div class="home__buttons">
+    <a><span class="editable">REQUEST APPOINTMENT</span></a>
+    <a href="membership.html"
+      ><span class="editable">MIMOSAS MEMBERSHIP</span></a
+    >
+  </div>
+  <div id="imageToggle">
+    <div
+      class="home__image"
+      v-bind:style="{ backgroundImage: `url('${src}')` }"
+    ></div>
+    <div class="home__images" v-on:click="toggle">
+      <figure><img class="editable" src="./images/salon-three.png" /></figure>
+      <figure><img class="editable" src="/images/salon-two.png" /></figure>
+      <figure><img class="editable" src="./images/salon-four.png" /></figure>
+      <figure><img class="editable" src="./images/salon-seven.png" /></figure>
+      <figure><img class="editable" src="./images/salon-five.png" /></figure>
+      <figure><img class="editable" src="./images/nails.png" /></figure>
+    </div>
+  </div>
 </section>
